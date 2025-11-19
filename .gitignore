@@ -1,24 +1,54 @@
-# Ignore everything except custom code
+# =====================================================
+# IGNORE EVERYTHING IN THIS PROJECT
+# =====================================================
+*
 
-# WordPress Core
-/wp-admin/
-/wp-includes/
-wp-config.php
-
-# Uploads
-wp-content/uploads/
-
-# Other plugins and themes
-wp-content/plugins/
-wp-content/themes/*
+# =====================================================
+# ALLOW ONLY YOUR CUSTOM THEME
+# =====================================================
+!wp-content/
+!wp-content/themes/
 !wp-content/themes/myidealfranchise/
+!wp-content/themes/myidealfranchise/**
 
-# System files
+# =====================================================
+# ALLOW GIT SYSTEM FILES
+# =====================================================
+!.gitignore
+!README.md
+
+# =====================================================
+# IGNORE EVERYTHING ELSE INSIDE WP-CONTENT
+# =====================================================
+wp-content/plugins/
+wp-content/uploads/
+wp-content/cache/
+wp-content/litespeed/
+wp-content/wpvivid_staging/
+wp-content/wpvividbackups/
+wp-content/*.php
+
+# =====================================================
+# IGNORE WORDPRESS CORE
+# =====================================================
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+index.php
+readme.html
+license.txt
+.htaccess
+
+# =====================================================
+# IGNORE ENV & SYSTEM FILES
+# =====================================================
 *.log
-*.lock
 *.zip
 *.tar
 *.tar.gz
+*.sql
+*.db
 vendor/
 node_modules/
 .env
