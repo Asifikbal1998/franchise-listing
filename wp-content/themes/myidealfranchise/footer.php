@@ -2,7 +2,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <!-- footer 1 -->
+            <!-- footer 1 asif -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
