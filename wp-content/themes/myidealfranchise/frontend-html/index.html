@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAS Broker</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Fontawesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="script.js" defer></script>
+
+  <!-- aos animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav>
+      <!-- Checkbox for toggling menu -->
+      <input type="checkbox" id="check" title="Toggle navigation menu">
+      <!-- Menu icon -->
+      <label for="check" class="checkbtn" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!-- Site logo -->
+      <div class="logo"><img src="images/logo 1.png" alt="" srcset=""></div>
+      <!-- Navigation links -->
+
+      <ul class="mb-0">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="franchisor.html">Franchisor</a></li>
+        <li><a href="franchise.html">Browse Franchises</a></li>
+        <li><a href="learning.html">Learning Center</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+      <div class="navcta float-end m-auto">
+        <button class="">Client Login</button>
+        <button>Registration</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero slider -->
+  <section class="hero-slider hero-style">
+    <div class="searchbox">
+      <div class="container">
+        <div class="home-allinput">
+          <select class="Select-Industry">
+            <option value="relevance" disabled>Select Industry</option>
+            <option value="food-beverage">Food & Beverage</option>
+            <option value="business-services">Business Services</option>
+            <option value="health-fitness">Health & Fitness</option>
+          </select>
+          <select class="Select-Amount">
+            <option value="relevance" disabled>Select Amount</option>
+            <option value="united-states">United States</option>
+            <option value="canada">Canada</option>
+            <option value="international">International</option>
+          </select>
+          <select class="Select-Location">
+            <option value="relevance" disabled>Select Location</option>
+            <option value="under-50k">Under $50K</option>
+            <option value="50k-100k">$50K - $100K</option>
+            <option value="100k-500k">$100K - $500K</option>
+            <option value="over-500k">Over $500K</option>
+          </select>
+          <button class="cta-btn">Search Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="kenburns-top">
+            <img src="images/businessman-with-arms-crossed(1).jpg" class="" alt="...">
+          </div>
+          <div class="carousel-caption">
+            <h1>Grow Your Franchise with the Right Partners</h1>
+            <p>Discover the best franchises tailored to your goals, budget, and lifestyle.</p>
+            <button class="cta-btn">Get Free Expert Help</button>
+            <!-- <div class="buttons">
+              <button class="blob-btn">
+                Get Free Expert Help
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="kenburns-top">
+            <img src="images/businessman-with-arms-crossed(2).jpg" class="" alt="...">
+          </div>
+          <div class="carousel-caption">
+            <h1>Franchise Opportunities Tailored to Your Lifestyle</h1>
+            <p>Discover the best franchises tailored to your goals, budget, and lifestyle.</p>
+            <button class="cta-btn" href="recommend.html" rel="noopener noreferrer">Get Free Consultation</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="kenburns-top">
+            <img src="images/businessman-with-arms-crossed(3).jpg" class="" alt="...">
+          </div>
+          <div class="carousel-caption">
+            <h1>Reach Pre-Qualified Buyers Across the Country</h1>
+            <p>Discover the best franchises tailored to your goals, budget, and lifestyle.</p>
+            <button class="cta-btn">Request a Free Valuation</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Why Choose Franchise Section -->
+  <section class="why-choose">
+    <div class="container">
+      <div class="row why-choose-content">
+        <div class="col-md-5 why-choose-image">
+          <img src="images/businesswoman-explaining-infographic-elements-sheet-her-male-partner(1).png"
+            alt="Business Meeting">
+        </div>
+        <div class="col-md-7 why-choose-text">
+          <h2>Why Choose Franchise</h2>
+          <p>Choosing a franchise is one of the smartest ways to start your entrepreneurial journey with lower risk and
+            greater support. Unlike starting a business from scratch, franchising gives you access to a proven business
+            model, recognized brand, and ongoing training and mentorship from industry experts.</p>
+
+          <div class="feature-list">
+            <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+              <div class="feature-icon"><img src="images/blockchain 1.png" alt="" srcset=""></div>
+              <div class="feature-content">
+                <h3>Proven Business Model</h3>
+                <p>Franchises offer a tested and successful business system, reducing the risk of failure compared to
+                  starting from scratch.</p>
+              </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-duration="1500">
+              <div class="feature-icon"><img src="images/brand-image.png" alt="" srcset=""></div>
+              <div class="feature-content">
+                <h3>Brand Recognition</h3>
+                <p>Partner with an established brand that already has customer trust and market presence, making it
+                  easier to attract customers from day one.</p>
+              </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-duration="2000">
+              <div class="feature-icon"><img src="images/training.png" alt="" srcset=""></div>
+              <div class="feature-content">
+                <h3>Training & Support</h3>
+                <p>Franchisors provide comprehensive training, operational guidance, and marketing support, even if you
+                  have no prior business experience.</p>
+              </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-duration="2500">
+              <div class="feature-icon"><img src="images/performance.png" alt="" srcset=""></div>
+              <div class="feature-content">
+                <h3>Faster Return on Investment</h3>
+                <p>With built-in systems and loyal customer bases, franchisees often start earning quicker than
+                  independent businesses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Franchise Categories -->
+  <section class="featured-categories">
+    <div class="container">
+      <h2 class="section-title">Featured Franchise Categories</h2>
+      <div class="row categories-grid">
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="500">
+          <div class="category-card">
+            <div class="fcardcompaire">
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+            <div class="category-icon"><img src="images/image.png" alt="" srcset=""></div>
+            <h3>1-800-Radiator</h3>
+            <p>Sculpt your future with VP Fitness! Own a premium boutique gym with saunas, juice bars, and tailored
+              workouts.</p>
+            <div class="category-stats">
+              <div class="stat">
+                <h5 class="stat-number">Cash Required <span>$ 1,000,000</span></h5>
+              </div>
+            </div>
+            <button class="category-btn">
+              <input type="checkbox" id="logo1" name="logo1" value="logo">
+              <label for="logo1"> Request Free Info</label><br>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
+          <div class="category-card">
+            <div class="fcardcompaire">
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+            <div class="category-icon"><img src="images/image (2).png" alt="" srcset=""></div>
+            <h3>1-800-Radiator</h3>
+            <p>Sculpt your future with VP Fitness! Own a premium boutique gym with saunas, juice bars, and tailored
+              workouts.</p>
+            <div class="category-stats">
+              <div class="stat">
+                <h5 class="stat-number">Cash Required <span>$ 1,000,000</span></h5>
+              </div>
+            </div>
+            <button class="category-btn">
+              <input type="checkbox" id="logo2" name="logo1" value="logo">
+              <label for="logo2"> Request Free Info</label><br>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="1500">
+          <div class="category-card">
+            <div class="fcardcompaire">
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+            <div class="category-icon"><img src="images/image(1).png" alt="" srcset=""></div>
+            <h3>1-800-Radiator</h3>
+            <p>Sculpt your future with VP Fitness! Own a premium boutique gym with saunas, juice bars, and tailored
+              workouts.</p>
+            <div class="category-stats">
+              <div class="stat">
+                <h5 class="stat-number">Cash Required <span>$ 1,000,000</span></h5>
+              </div>
+            </div>
+            <button class="category-btn">
+              <input type="checkbox" id="logo3" name="logo3" value="logo">
+              <label for="logo3"> Request Free Info</label><br>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="category-card">
+            <div class="fcardcompaire">
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+            <div class="category-icon"><img src="images/image(2).png" alt="" srcset=""></div>
+            <h3>1-800-Radiator</h3>
+            <p>Sculpt your future with VP Fitness! Own a premium boutique gym with saunas, juice bars, and tailored
+              workouts.</p>
+            <div class="category-stats">
+              <div class="stat">
+                <h5 class="stat-number">Cash Required <span>$ 1,000,000</span></h5>
+              </div>
+            </div>
+            <button class="category-btn">
+              <input type="checkbox" id="logo4" name="logo4" value="logo">
+              <label for="logo4"> Request Free Info</label><br>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare Franchise Choices -->
+  <section class="compare-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 compare-text">
+          <h2>Compare Franchise Choices</h2>
+          <p>Choosing the right franchise is a big decision — and comparing your options side-by-side is the smartest
+            way to find the best fit. Our powerful Franchise Comparison Tool lets you evaluate multiple brands across
+            key factors like:</p>
+          <ul class="compare-list">
+            <li><span>1.</span> Initial Investment & Ongoing Fees</li>
+            <li><span>2.</span> Earning Potential & Time to ROI</li>
+            <li><span>3.</span> Training & Support Provided</li>
+            <li><span>4.</span> Brand Reputation & Market Demand</li>
+            <li><span>5.</span> Ideal Franchisee Profile</li>
+            <li><span>6.</span> Available Locations & Expansion Opportunities</li>
+          </ul>
+          <p>With just a few clicks, you can shortlist franchises, add them to your comparison list, and view a clear,
+            side-by-side breakdown — helping you make an informed and confident decision.</p>
+          <button class="cta-button">Start Comparing Franchises</button>
+        </div>
+        <div class="col-md-6 compare-image">
+          <img src="images/business-people-studying-statistic-report-indoors.png" alt="Business Analysis">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franchise Business Brokers -->
+  <section class="brokers-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-7 brokers-text">
+          <h2>Franchise Business Brokers</h2>
+          <h3>Expert Help to Find the Right Franchise — At No Cost to You</h3>
+          <p>Buying a franchise can feel overwhelming — but you don’t have to do it alone. Our certified Franchise
+            Business Brokers are here to guide you through every step of the process. From understanding your goals to
+            narrowing down the best-fit opportunities, brokers provide free, personalized support so you make smart,
+            confident decisions.</p>
+          <div class="broker-features">
+            <h4>What Our Brokers Do for You:</h4>
+            <ul>
+              <li> ✅ Understand your background, budget, and goals</li>
+              <li> ✅ Recommend top-performing franchises that match your profile</li>
+              <li> ✅ Share insider insights on earnings, support, and scalability</li>
+              <li> ✅ Help you prepare for meetings with franchisors</li>
+              <li> ✅ Connect you with legal, funding, and onboarding resources</li>
+            </ul>
+          </div>
+          <button class="cta-button">Connect with a Broker</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready to Sell Your Franchise -->
+  <section class="sell-franchise">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <h2 class="section-title">Ready to Sell Your Franchise</h2>
+          <p class="section-subtitle">If you're ready to take your franchise to the next level, we’re here to help.
+            Whether
+            you’re an emerging concept or an established national brand, our platform connects you with qualified,
+            motivated
+            buyers actively searching for their next business opportunity.</p>
+        </div>
+        <div class="col-md-2">
+
+          <div class="sell-cta">
+            <button class="cta-button">List Your Franchise</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
+          <div class="franchise-card">
+            <img src="images/woman-painting-house-wall-full-shot.png" alt="Franchise Opportunity">
+            <div class="franchise-info">
+              <h3>MA-Residential And Commercial Property Painting</h3>
+              <div class="franchise-price">$1,800,000</div>
+              <button class="franchise-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="1500">
+          <div class="franchise-card">
+            <img src="images/office-buildings-with-modern-architecture.png" alt="Franchise Opportunity">
+            <div class="franchise-info">
+              <h3>Multi-Unit Batteries Plus With Real Estate</h3>
+              <div class="franchise-price">$1,400,000</div>
+              <button class="franchise-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="franchise-card">
+            <img src="images/tiler-working-renovation-apartment.png" alt="Franchise Opportunity">
+            <div class="franchise-info">
+              <h3>Remodeling Franchise Covering Georgia</h3>
+              <div class="franchise-price">$2,000,000</div>
+              <button class="franchise-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="2500">
+          <div class="franchise-card">
+            <img src="images/cosmetologist-applying-mask-face-client-beauty-salon.png" alt="Franchise Opportunity">
+            <div class="franchise-info">
+              <h3>CO-Innovative and Exclusive Facials</h3>
+              <div class="franchise-price">$900,000</div>
+              <button class="franchise-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- faq -->
+  <section class="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="">
+            <h2 class="section-title">Why Our Franchise is Your Best Business Opportunity</h2>
+            <p class="section-subtitle">Ready to embark on a rewarding entrepreneurial journey? Join Future State and be
+              part of a legacy of success. Contact us to learn more about franchise opportunities, investment details,
+              <br> <br>
+
+              and how we can support you in achieving your business goals. Ready to embark on a rewarding
+              entrepreneurial journey? Join Future State and be part of a legacy of success.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="details" data-aos="fade-up" data-aos-duration="1000">
+            <details class="details__container">
+              <summary class="details__summary">
+                <!-- The title -->
+                <h2 class="details__title">How does franchising work?</h2>
+              </summary>
+            </details>
+            <!-- The content -->
+            <div class="details__desc">
+              <div class="details__desc-inner">
+                Our customers are at the heart of everything we do, and we strive to provide exceptional
+              </div>
+            </div>
+          </div>
+          <div class="details" data-aos="fade-up" data-aos-duration="1500">
+            <details class="details__container">
+              <summary class="details__summary">
+                <!-- The title -->
+                <h2 class="details__title">What are the benefits of franchising?</h2>
+              </summary>
+            </details>
+            <!-- The content -->
+            <div class="details__desc">
+              <div class="details__desc-inner">
+                Our customers are at the heart of everything we do, and we strive to provide exceptional
+              </div>
+            </div>
+          </div>
+          <div class="details" data-aos="fade-up" data-aos-duration="2000">
+            <details class="details__container">
+              <summary class="details__summary">
+                <!-- The title -->
+                <h2 class="details__title">Are franchise opportunities available?</h2>
+              </summary>
+            </details>
+            <!-- The content -->
+            <div class="details__desc">
+              <div class="details__desc-inner">
+                Our customers are at the heart of everything we do, and we strive to provide exceptional
+              </div>
+            </div>
+          </div>
+          <div class="details" data-aos="fade-up" data-aos-duration="2500">
+            <details class="details__container">
+              <summary class="details__summary">
+                <!-- The title -->
+                <h2 class="details__title">Are franchise opportunities available?</h2>
+              </summary>
+            </details>
+            <!-- The content -->
+            <div class="details__desc">
+              <div class="details__desc-inner">
+                Our customers are at the heart of everything we do, and we strive to provide exceptional
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start Your Journey -->
+  <section class="journey-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="journey-image">
+            <a id="play-video" class="video-play-button" href="#">
+              <span></span>
+            </a>
+            <img src="images/businesswoman-explaining-infographic-elements-sheet-her-male-partner(2).png"
+              alt="Franchise Success">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="journey-text">
+            <h2>Start Your Franchise Journey</h2>
+            <h3>Franchise Direct Will Help You Find the Perfect Franchise Opportunity</h3>
+            <p>Our comprehensive franchise marketplace connects you with over 3,000 franchise opportunities across all
+              industries and investment levels.</p>
+            <ul>
+              <li>• Connecting Franchises & Prospective Owners FREE</li>
+              <li>• Advice for Finance, Funding, and Legal</li>
+              <li>• Resources for successful franchise Operations</li>
+            </ul>
+            <button class="cta-button">Find the Right Franchise</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 cta-content">
+          <h2>Want personalized franchise recommendations?</h2>
+          <p>Finding the right franchise can be overwhelming—but you don’t have to do it alone.</p>
+        </div>
+        <div class="col-md-3 actioncta">
+          <button class="cta-button-alt"><a href="recommend.html" target="_blank"></a> Get Your Recommendations
+            Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="compaire.html">Compare</a></li>
+            <li><a href="recommend.html">Recommend</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Franchise Guide</a></li>
+            <li><a href="#">Business Brokers</a></li>
+            <li><a href="#">Franchise Opportunities</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="featuers.html">Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Investment</a></li>
+            <li><a href="#">Financing</a></li>
+            <li><a href="#">Legal Resources</a></li>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="listfranchise.html">List Franchise</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Call: 1-800-555-0123</p>
+          <p>Email: info@pasbrokers.com</p>
+          <p>Address: 123 Business Ave, Suite 100</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 PAS Brokers Corporation. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy </a> |
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

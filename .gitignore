@@ -1,0 +1,26 @@
+# Ignore everything except custom code
+
+# WordPress Core
+/wp-admin/
+/wp-includes/
+wp-config.php
+
+# Uploads
+wp-content/uploads/
+
+# Other plugins and themes
+wp-content/plugins/
+wp-content/themes/*
+!wp-content/themes/myidealfranchise/
+
+# System files
+*.log
+*.lock
+*.zip
+*.tar
+*.tar.gz
+vendor/
+node_modules/
+.env
+.DS_Store
+Thumbs.db

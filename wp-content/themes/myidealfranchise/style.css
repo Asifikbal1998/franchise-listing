@@ -1,0 +1,27 @@
+/*
+Theme Name: My Ideal Franchise
+Theme URI: https://pasdgtal.com/
+Author: Pas Digital
+Author URI: https://pasdgtal.com/
+Description: Custom WordPress theme for PAS Digital Franchise Listing Website
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pas-digital
+*/
+
+.alert {
+  padding: 12px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.alert-error {
+  background: #f8d7da;
+  color: #721c24;
+}
