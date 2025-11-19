@@ -35,7 +35,7 @@ wp-admin/
 wp-includes/
 wp-*.php
 xmlrpc.php
-index.php
+/index.php
 readme.html
 license.txt
 .htaccess
